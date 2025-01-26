@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast/Snackbar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form>
+        <h1>Toast/Snackbar</h1>
+        <select name="loc1" title="Location-1">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+        </select>
+        <select name="loc2" title="Location-2">
+            <option value="top">Top</option>
+            <option value="bottom">Bottom</option>
+        </select>
+        <select name="msg-type" title="Type">
+            <option value="normal">Normal</option>
+            <option value="success">Success</option>
+            <option value="error">Error</option>
+            <option value="warning">Warning</option>
+            <option value="info">Info</option>
+        </select>
+        <input type="text" title="message" value="This is a toast message!">
+        <section>
+            <label for="duration">Duration</label>
+            <input title="Duration" type="range" min="3" max="10" name="duration" value="3">
+            <label class="duration">3s</label>
+        </section>
+        <button type="button">Show Toast</button>
+    </form>
+    <div class="msg-cont top-left">
+        <div class="message">
+            <span>This is a toast message!</span>
+            <button class="close" type="button" title="Close">✕</button>
+        </div>
+        <div class="message success">
+            <span>✓ &nbsp; This is a toast message!</span>
+            <button class="close" type="button" title="Close">✕</button>
+        </div>
+        <div class="message error">
+            <span>! &nbsp; This is a toast message!</span>
+            <button class="close" type="button" title="Close">✕</button>
+        </div>
+        <div class="message warning">
+            <span>⚠ &nbsp; This is a toast message!</span>
+            <button class="close" type="button" title="Close">✕</button>
+        </div>
+        <div class="message info">
+            <span>ⓘ &nbsp; This is a toast message!</span>
+            <button class="close" type="button" title="Close">✕</button>
+        </div>
+    </div>
+    <div class="msg-cont bottom-left"></div>
+    <div class="msg-cont top-right"></div>
+    <div class="msg-cont bottom-right"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
